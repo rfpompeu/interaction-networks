@@ -1,0 +1,23 @@
+{
+  "name": "interaction-networks",
+  "version": "1.0.0",
+  "description": "It is a Web App that aims to simplify the creation of interaction networks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfpompeu/interaction-networks.git"
+  },
+  "author": "Rafael Pompeu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rfpompeu/interaction-networks/issues"
+  },
+  "homepage": "https://github.com/rfpompeu/interaction-networks#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
