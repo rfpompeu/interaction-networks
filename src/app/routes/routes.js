@@ -1,4 +1,4 @@
-const path =  require('path');
+const path = require('path');
 const db = require("../../config/database");
 const NetworkDAO = require("../../infra/NetworkDAO")
 
@@ -15,6 +15,11 @@ module.exports = (app, express) => {
                 )
             })
             .catch((error) => { console.log(error) });
+    });
+    app.get("/network", (req, resp) => {
+        resp.marko(
+            require('../views/network.marko')
+        )
     });
 }
 
