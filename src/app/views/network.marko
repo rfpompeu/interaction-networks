@@ -63,17 +63,22 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col text-center border">
-                        <img src="../../public/images/network_ex.png"/>
+                    <div id="network" style="width:400px;height:400px;" class="col text-center border">
+                        
                     </div>
                 </div>
             </div>
         </main>
+        <script src="../../libs/js/jquery-3.5.1.slim.min.js"></script>
+        <script src="../../libs/js/popper.min.js"></script>
+        <script src="../../libs/js/bootstrap.min.js"></script>
+        <script src="../../libs/js/d3.min.js"></script>
         <script src="../../app/controllers/NetworkController.js"/>
         <script src="../../app/views/NetworkView.js"/>
         <script>
             let networkController = new NetworkController();
             networkController.radioCheck("text")
+            networkController.networkExample()
             document.getElementsByName("inputOption").forEach(function(e) {
                 e.addEventListener("click", function() {
                     networkController.radioCheck(e.value)
