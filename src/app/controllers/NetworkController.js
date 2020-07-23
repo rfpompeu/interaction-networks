@@ -1,11 +1,24 @@
 class NetworkController {
     constructor() {
         this._networkView = new NetworkView()
+        this._network = new Network()
     }
 
     radioCheck(radioOption) {
         this._networkView._update(radioOption);
     }
+
+    inputOpt() {
+        let radios = document.getElementsByName("inputOption");
+        for (var i = 0, length = radios.length; i < length; i++) {
+            if (radios[i].checked) {
+                radios[i].value==="text"? (this._network.text()): alert("file");
+                break;
+            }
+        }
+
+    }
+
     networkExample() {
         const network = {
             "nodes": [
@@ -21,7 +34,7 @@ class NetworkController {
             ]
         }
 
-       
+
 
         this._networkView._networkCreator(network)
     }

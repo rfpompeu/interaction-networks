@@ -3,7 +3,7 @@ class NetworkView {
         this._text = `<textarea
         class="form-control"
         placeholder="a=>b \na=>c \nb=>c"
-        id="exampleFormControlTextarea1"
+        id="FormTextarea"
         rows="3" disabled/>`;
         this._file = `<input type="file" class="custom-file-input" id="customFile" disabled/>
         <label class="custom-file-label" for="customFile">Choose file</label>`;
